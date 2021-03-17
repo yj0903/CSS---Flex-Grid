@@ -11,14 +11,19 @@
 		display: grid;
 		/* grid-template-columns: 100px 300px 200px; */
 		/* fr: fraction */
+		/* 위 코드는 fr은 fraction: 부분, 비율, 분수 */
 		/* grid-template-columns: 1fr 2fr 1fr; */
-		/* grid-template-columns: 1fr 500px 1fr; */
+		/* grid-template-columns: 1fr 500px 1fr; 양끝 유동적, 가운데 500픽셀로 고정*/
 		/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
 		grid-template-columns: repeat(3, 1fr);
+		/* 여러개 반복될 경우 repeat함수 사용 */
 		/* grid-template-columns: repeat(3, 1fr 2fr 1fr); */
+
 		/* grid-template-rows: 200px 200px auto; */
 		/* grid-template-rows: repeat(2, 1fr); */
-		height: 80vh;
+		height: 90vh;
+
+		
 	}
 	</style>
 </head>

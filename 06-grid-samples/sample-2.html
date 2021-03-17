@@ -34,11 +34,15 @@
 		.game {
 			display: grid;
 			grid-template-rows: repeat(6, 11vmin);
+			/* vw: 브라우저 폭을 100으로 했을 때의 비율
+			vh: 브라우저 높이
+			vmin: 폭, 높이 중 작은 값을 기준으로 */
 			grid-template-columns: repeat(6, 11vmin);
 			gap: 1vw;
 			transform: rotateX(0deg) rotateZ(0deg);
 			transform-style: preserve-3d;
 			animation: starting 2s 0.5s forwards;
+			/* 애니메이션으로 사선방향 */
 		}
 		.tile {
 			/* overflow: hidden; */
@@ -64,7 +68,8 @@
 		}
 		.tile input {
 			position: absolute;
-			opacity: 0;
+			opacity: 0; 
+			/* opacity를 0으로 하면  */
 		}
 		.tile input:checked + label {
 			color: white;

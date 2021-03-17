@@ -13,10 +13,11 @@
 		gap: 1rem;
 		grid-template-columns: 1fr 3fr 1fr;
 		grid-template-areas:
-			'..... header header'
+			'none header header'
 			'sidebar-a main sidebar-b'
 			'footer footer footer';
 	}
+	/* 영역에 이름을 붙여줌 */
 	.header { grid-area: header; }
 	.sidebar-a { grid-area: sidebar-a; }
 	.sidebar-b { grid-area: sidebar-b; }
