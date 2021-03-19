@@ -1,0 +1,129 @@
+.header{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 80px;
+    padding: 0 1rem;
+}
+
+.search-form{
+    width: 300px;
+    max-width: 60%; 
+    margin-left: auto;
+    margin-right: 3rem;
+}
+    /*창 크기 줄어들면 로고를 침범한다. 제한걸어 60%만큼 줄어들도록*/
+
+.primary{
+    padding: 1rem;
+}
+.secondary{
+    padding: 1rem;
+}
+.secondary-a{
+    background: white;
+}
+.secondary-b{
+    color: white;
+    background: #666;
+}
+.footer{
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+.modal{
+    /* 평소에는 모달창이 보이지 않는다. */
+    display: none;
+    top: 80px;
+}
+
+/* 모달스위치(체크박스)가 체크되면 */
+#modal-switch:checked ~ .modal{
+    display: flex;
+}
+label[for="modal-switch"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 위치는 고정, 상단우측에 위치 */
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    /* z인덱스로 맨 위로 올려야 함.
+    안 그러면 클릭이 안됨 */
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+label[for="modal-switch"]:before {
+	content: "⚑";
+	font-size: 2rem;
+	cursor: pointer;
+}
+#modal-switch:checked ~ label[for="modal-switch"]:before{
+    color: dodgerblue;
+}
+#modal-switch,
+label[for="modal-switch"] span{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    /* 체크박스 안보이도록 opacity를 0으로 */
+    opacity: 0;
+}
+
+/* ===============
+지금까지는 1단을 설정
+아래에서는 2단, 3단 등을 설정할 것
+================= */
+
+@media (min-width: 1024px) {
+    .page{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header{
+        width: 100%;
+    }
+    .menu{
+        width: 100%;
+    }
+
+    /* 
+    본문에서 프라이머리는 60% 
+    양 옆에 세컨더리가 20%씩
+    */
+    .primary{
+        width: 60%;
+        order: 2;
+    }
+    .secondary{
+        width: 20%;
+    }
+    .secondary-a{
+        order: 1;
+    }
+    .secondary-b{
+        order: 3;
+    }
+    .footer{
+        width: 100%;
+        order: 4;
+    }
+
+    @media (min-width:1400px) {
+        .primary{
+            /* width: calc(100% - 600px); */
+            /* flex-grow: 1; */
+            flex: 1 1 auto;
+            /* flex: auto; */
+        }
+        .secondary {
+            width: 300px;
+        }
+    }
+}

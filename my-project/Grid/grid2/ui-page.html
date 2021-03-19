@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid로 웹사이트 만들기</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="ui-page.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- header: 로고, 검색창, 모달창 -->
+        <header class="header">
+            <h1 class="website-title">1분 코딩</h1>
+            <!-- 검색창 -->
+            <!-- 타입
+                검색용: search
+                이메일용: email
+                전화번호: tel 등등 목적에 맞게
+            -->
+            <form class="search-form">
+                <input type="search">
+                <input type="submit" value="찾기">
+            </form>
+
+            <!-- 이부분, html에서 해도 되지만 css에서 해도 된다 -->
+            <!-- <div id="modal-switch">⚑</div> -->
+        </header>
+
+        <!-- menu: 메뉴만 -->
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Product</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Contact</a>
+            </li>
+        </ul>
+
+        <!-- primary:카드리스트 -->
+        <section class="primary">
+            <!-- 카드 리스트 -->
+            <ul class="card-list">
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+                <li class="card-item">
+                    <figure class="card-image" style="background-image: url(ilbuni.png)">
+                        <img src="ilbuni.png" alt="일분이">
+                    </figure>
+                    <div class="card-discription">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo reprehenderit, qui quis fuga
+                        dolorum iusto quam tempora. Itaque alias officia consequuntur. Natus voluptatum commodi, autem
+                        dolores tempore incidunt soluta neque!
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- secondary-a: 불릿리스트, 유저리스트 -->
+        <aside class="secondary secondary-a">
+
+            <!-- bullet 리스트 -->
+            <ul class="info-list">
+                <li class="info-list-item">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam libero dicta ut magni quos, alias
+                    officia earum dolorum vel aspernatur.
+                </li>
+                <li class="info-list-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsa corrupti suscipit accusantium
+                    saepe.
+                </li>
+                <li class="info-list-item">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae officia nulla asperiores,
+                    tempore, quo, dicta perspiciatis illum consequatur libero modi sapiente culpa exercitationem.
+                </li>
+            </ul>
+
+            <!-- 유저 목록리스트 -->
+            <ul class="user-list friend-list">
+                <li class="user-item friend-item">
+                    <figure class="user-photo" style="background-image: url(ilbuni.png);">
+
+                    </figure>
+                    <p class="user-name">일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 </p>
+                </li>
+                <li class="user-item friend-item">
+                    <figure class="user-photo" style="background-image: url(ilbuni.png);">
+
+                    </figure>
+                    <p class="user-name">일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 </p>
+                </li>
+                <li class="user-item friend-item">
+                    <figure class="user-photo" style="background-image: url(ilbuni.png);">
+
+                    </figure>
+                    <p class="user-name">일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 일분이 </p>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- secondary-b: 메시지리스트 -->
+        <aside class="secondary secondary-b">
+            <!-- 메시지 -->
+            <!--이미지 태그 대신에 백그라운드 이미지 씀.
+            크기가 다양한 이미지들 위치조정 힘듦 -->
+            <ul class="user-list message-list">
+                <li class="user-item message-item">
+                    <figure class="user-photo" style="background-image: url(ilbuni.png);"></figure>
+                    <p class="message-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eos possimus numquam natus?
+                        Officia facilis exercitationem eveniet corporis! Ipsa, hic?
+                    </p>
+                </li>
+                <li class="user-item message-item">
+                    <figure class="user-photo" style="background-image: url(ilbuni.png);">
+                    </figure>
+                    <p class="message-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eos possimus numquam natus?
+                        Officia facilis exercitationem eveniet corporis! Ipsa, hic?
+                    </p>
+                </li>
+                <li class="user-item message-item">
+                    <figure class="user-photo" style="background-image: url(ilbuni.png);">
+                    </figure>
+                    <p class="message-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eos possimus numquam natus?
+                        Officia facilis exercitationem eveniet corporis! Ipsa, hic?
+                    </p>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- footer -->
+        <footer class="footer">
+            This is footer
+        </footer>
+
+        <!-- 체크박스로 레이블 만들어 -->
+        <input type="checkbox" id="modal-switch">
+        <label for="modal-switch">
+            <span> 모달 열고 닫기 </span>
+        </label>
+
+        <!-- 모달창 만들기 -->
+        <div class="modal">
+            <div class="dialog">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita nemo quo molestias non
+                voluptatem ut, blanditiis illum alias iusto. Exercitationem eaque nobis ullam rerum possimus voluptate
+                non veritatis cupiditate.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
