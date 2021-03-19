@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1rem;
+}
+
+/* .search-form{
+    width: 300px;
+    max-width: 60%; 
+} */
+    /*창 크기 줄어들면 로고를 침범한다. 제한걸어 60%만큼 줄어들도록*/
+
+.primary{
+    padding: 1rem;
+}
+.secondary{
+    padding: 1rem;
+}
+.secondary-a{
+    background: white;
+}
+.secondary-b{
+    color: white;
+    background: #666;
+}
+.footer{
+    padding: 1rem;
+    text-align: center;;
+}
